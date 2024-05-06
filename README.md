@@ -45,6 +45,8 @@ He notices that the frontend is created very poorly and runs too slowly to make 
 
 Rubbing his scheming, microbial hands together, Plankton devised a plan to find information to aid him in his heist... perhapes an identifier for someone important?
 
+_HINT: Using tools like curl and Javascript could help you!_
+
 ## Endpoints
 Upon Karen's initial scan of the Krusty Krab's API infastructure, these are all of the usable endpoints found:
 
@@ -68,7 +70,7 @@ node mitm.js
 
 The command intercepted and logged all requests made through the Krusty Krab wifi. Most of the requests were uninteresting, but Plankton noticed some very intriguing requests made through the wifi... perhaps they could help him in his quest for the secret formula.
 
-#### _Helpful Information_
+#### _MITM Helpful Information_
 
 - The `mitm` tool simulates requests made through the Krusty Krab wifi.
 - Each time you run the `mitm` tool, it will generate a new set of requests, but it will still have any information you need to complete the challenge.
