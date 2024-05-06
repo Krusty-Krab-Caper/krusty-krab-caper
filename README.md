@@ -1,10 +1,8 @@
-# The Secret Formula 
+# The Secret Formula
 
 In the bustling underwater city of Bikini Bottom, the Krusty Krab was known for its delicious Krabby Patty, a burger so scrumptious that its secret formula was a closely guarded treasure. Mr. Krabs, the crustacean owner, had recently digitized his operations, including the recipe’s safekeeping, through an API that connected to his vault.
 
 Plankton, the tiny but ambitious owner of the rival restaurant, the Chum Bucket, had tried every trick in the book to get his hands on the coveted formula, to no avail. But when he heard about the Krusty Krab’s new digital system, a devious plan formed in his microscopic mind.
-
-
 
 ## Chapter 1: The Directory
 
@@ -20,8 +18,8 @@ Upon locating the site, Plankton discovered that it was designed to retreive dir
 
 ```json
 {
-    "code": 404,
-    "message": "Not Found"
+  "code": 404,
+  "message": "Not Found"
 }
 ```
 
@@ -33,5 +31,21 @@ Rubbing his scheming, microbial hands together, Plankton devised a plan to find 
 
 - The endpoint you'll be using is `http://localhost:8080/directory`
 - There are nearly 100 employees in the Krusty Krab IT department.
-- You may need to write some code to help you. 
+- You may need to write some code to help you.
 - There are no rate limits.
+
+## Man in the Middle
+
+Plankton decides to use a Man in the Middle (MITM) attack to intercept the requests made by anyone connected to the Krusty Krab wifi to get more information. He used his own custom tool called `mitm` to do so. He ran the following command in his terminal:
+
+```bash
+node mitm.js
+```
+
+The command intercepted and logged all requests made through the Krusty Krab wifi. Most of the requests were uninteresting, but Plankton noticed some very intriguing requests made through the wifi... perhaps they could help him in his quest for the secret formula.
+
+#### _Helpful Information_
+
+- The `mitm` tool simulates requests made through the Krusty Krab wifi.
+- Each time you run the `mitm` tool, it will generate a new set of requests, but it will still have any information you need to complete the challenge.
+- Search through the requests, you may find something useful...
