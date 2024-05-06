@@ -1,6 +1,6 @@
-services: 
-  main_server: 
-    image: "krusty-krab-caper"
-    build: https://github.com/SecretJuice/api-ctf.git
+services:
+  main_server:
+    image: 'krusty-krab-caper'
+    build: https://github.com/Krusty-Krab-Caper/api-ctf.git
     ports:
       - 8080:8080
