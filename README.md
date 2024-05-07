@@ -11,7 +11,7 @@ Welcome to the Krusty Krab Caper: a Capture the Flag game. You play as Plankton 
 ### Prerequisites
 
 - Docker
-- Node.js
+- Node.js >= 20
 - Clone this repository
 - Spin up the container by running the command `docker compose up --build --detach`
 
@@ -33,6 +33,7 @@ Here are some resources that may help you in your quest:
 - [Node.js](https://nodejs.org/en/) is a JavaScript runtime that can be used to run JavaScript code outside of a browser.
 - [OAuth 2.0](https://oauth.net/2/) is a protocol that allows secure authorization in a simple and standard method from web, mobile, and desktop applications. ([BYU tutorial](https://fullstack.byu.edu/#/reference/oauth2))
 - [REST](https://restfulapi.net/) is a software architectural style that defines a set of constraints to be used for creating Web services. ([BYU tutorial](https://fullstack.byu.edu/#/reference/rest))
+- [Consuming Tyk APIs Tutorial](https://github.com/byu-oit/tutorial-consume-tyk-api)
 
 ## The Heist
 
@@ -57,17 +58,15 @@ He notices that the frontend is created very poorly and runs too slowly to make 
 
 Rubbing his scheming, microbial hands together, Plankton devised a plan to find information to aid him in his heist... perhapes an identifier for someone important?
 
-_HINT: Using tools like curl and Javascript could help you!_
+_Hint: Using tools like curl, Postman, and/or Javascript could help you!_
 
 ## Endpoints
 
-Upon Karen's initial scan of the Krusty Krab's API infastructure, these are all of the usable endpoints found:
+Upon Karen's initial scan of the Krusty Krab's API infastructure, these are some of the usable endpoints found:
 
 | Known Endpoints | Method | Description                                             | Known Security Measures |
 | --------------- | :----: | ------------------------------------------------------- | ----------------------- |
 | `/directory`    |  GET   | Contains Krusty Krab IT Department Employee Information | None                    |
-| `/clients`      |  GET   | Client Credential Management System                     | Bearer Token            |
-| `/token`        |  POST  | Create Auth Tokens with Client Credentials              | None                    |
 | `/vault`        |  GET   | The main site of the Krabby Patty Secret Formula vault  | Bearer Token            |
 
 _Hint: You may discover additional endpoints later!_
@@ -84,8 +83,8 @@ The command intercepted and logged all requests made through the Krusty Krab wif
 
 #### _MITM Helpful Information_
 
-- The `mitm` tool simulates requests made through the Krusty Krab wifi.
-- Each time you run the `mitm` tool, it will generate a new set of requests, but it will still have any information you need to complete the challenge.
-- Depending on the terminal you run the tool in, the output could be truncated. Either use another terminal or try piping the output to another file with `node mitm.js > log.txt`
+- Don't worry, the `mitm` tools doesn't actually perform a Man in the Middle attack. It just simulates requests made through the Krusty Krab wifi.
+- Each time you run the `mitm` tool, you will see a new set of requests, but you will still have any information you need to complete the challenge.
+- Depending on the terminal you run the tool in, the output could be truncated. Either use another terminal or try piping the output to another file with `node mitm.js > log.txt` (git-bash users may need to use `node.exe mitm.js > log.txt`). If you do this, you can then open the file in a text editor to see the output, but you may need to refresh/close-reopen the file to see new output.
 - CTRL F is your friend here!
 - Search through the requests, you may find something useful...
