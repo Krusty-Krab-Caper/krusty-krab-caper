@@ -5,9 +5,10 @@ In the bustling underwater city of Bikini Bottom, the Krusty Krab was known for 
 Plankton, the tiny but ambitious owner of the rival restaurant, the Chum Bucket, had tried every trick in the book to get his hands on the coveted formula, to no avail. But when he heard about the Krusty Krab’s new digital system, a devious plan formed in his microscopic mind.
 
 ## Intro and Rules
+
 Welcome to the Krusty Krab Caper: a Capture the Flag game. You play as Plankton as you try to obtain the coveted Krabby Patty Secret Formula.
 
-### Prerequisites 
+### Prerequisites
 
 - Docker
 - Node.js
@@ -17,10 +18,21 @@ Welcome to the Krusty Krab Caper: a Capture the Flag game. You play as Plankton 
 _Remember that every time you restart the server many of the secrets you may have found will be reset._
 
 ### Rules
+
 Here are the ground rules of this game:
 
 - No looking at the source code found in the [api-ctf](https://github.com/Krusty-Krab-Caper/api-ctf) repository.
 - No looking at the source code found in the mitm.js tool (It's been obfuscated, but still don't)
+
+### Helpful Resources
+
+Here are some resources that may help you in your quest:
+
+- [Postman](https://www.postman.com/) is a great tool for making API requests. ([BYU tutorial](https://fullstack.byu.edu/#/reference/postman))
+- [Curl](https://curl.se/) is a command-line tool for making HTTP requests.
+- [Node.js](https://nodejs.org/en/) is a JavaScript runtime that can be used to run JavaScript code outside of a browser.
+- [OAuth 2.0](https://oauth.net/2/) is a protocol that allows secure authorization in a simple and standard method from web, mobile, and desktop applications. ([BYU tutorial](https://fullstack.byu.edu/#/reference/oauth2))
+- [REST](https://restfulapi.net/) is a software architectural style that defines a set of constraints to be used for creating Web services. ([BYU tutorial](https://fullstack.byu.edu/#/reference/rest))
 
 ## The Heist
 
@@ -48,17 +60,17 @@ Rubbing his scheming, microbial hands together, Plankton devised a plan to find 
 _HINT: Using tools like curl and Javascript could help you!_
 
 ## Endpoints
+
 Upon Karen's initial scan of the Krusty Krab's API infastructure, these are all of the usable endpoints found:
 
-|Known Endpoints  |Method|Description                                  |Known Security Measures|
-|------------|:---------:|--------------------------------------------------------|------------|
-|`/directory`|GET        |Contains Krusty Krab IT Department Employee Information |None        |
-|`/clients`  |GET        |Client Credential Management System                     |Bearer Token|
-|`/token`    |POST       |Create Auth Tokens with Client Credentials              |None        |
-|`/vault`    |GET        |The main site of the Krabby Patty Secret Formula vault  |Bearer Token|
+| Known Endpoints | Method | Description                                             | Known Security Measures |
+| --------------- | :----: | ------------------------------------------------------- | ----------------------- |
+| `/directory`    |  GET   | Contains Krusty Krab IT Department Employee Information | None                    |
+| `/clients`      |  GET   | Client Credential Management System                     | Bearer Token            |
+| `/token`        |  POST  | Create Auth Tokens with Client Credentials              | None                    |
+| `/vault`        |  GET   | The main site of the Krabby Patty Secret Formula vault  | Bearer Token            |
 
-_Hint: You may discover additional endpoints later!_ 
-
+_Hint: You may discover additional endpoints later!_
 
 ## Man in the Middle
 
