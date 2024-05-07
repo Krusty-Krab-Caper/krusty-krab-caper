@@ -45,12 +45,12 @@ A wicked smile spread across Plankton's face. "At last, the Krabby Patty secret 
 
 Karen continued, "the `/directory` endpoint seems to contain basic information about the employees at the Krusty Krab's IT Department. It's accessed at their directory website."
 
-Upon locating the site, Plankton discovered that it was designed to retreive directory information by employee name. He put his own name, "Plankton" into the search bar and saw via the network tab in his browser that the following request is made: `http://localhost:8080/directory?id=Plankton`. He also sees the following response:
+Upon locating the site, Plankton discovered that it was designed to retreive directory information by employee name. He put his own name, "Sheldon Plankton" into the search bar and saw via the network tab in his browser that the following request is made: `http://localhost:8080/directory?name=Sheldon%20Plankton`. He also sees the following response:
 
 ```json
 {
   "code": 404,
-  "message": "Not Found"
+  "message": "Employee with name: Sheldon Plankton not found"
 }
 ```
 
