@@ -44,7 +44,7 @@ A wicked smile spread across Plankton's face. "At last, the Krabby Patty secret 
 
 Karen continued, "the `/directory` endpoint seems to contain basic information about the employees at the Krusty Krab's IT Department. It's accessed at their directory website."
 
-Upon locating the site, Plankton discovered that it was designed to retreive directory information by employee name. He put his own name, "Plankton" into the search bar and saw via the network tab in his browser that the following request is made: `http://localhost:8080/directory?id=0bafc1bbb34ddbf6f55935063bf51f50f8d775e6`. He also sees the following response:
+Upon locating the site, Plankton discovered that it was designed to retreive directory information by employee name. He put his own name, "Plankton" into the search bar and saw via the network tab in his browser that the following request is made: `http://localhost:8080/directory?id=Plankton`. He also sees the following response:
 
 ```json
 {
@@ -53,7 +53,7 @@ Upon locating the site, Plankton discovered that it was designed to retreive dir
 }
 ```
 
-He notices that the frontend is created very poorly and runs too slowly to make a lot of queries. He decides to rely on the underlying API to do his dirty work.
+He notices that the frontend is created very poorly and runs too slowly to make a lot of queries. He decides to rely on the underlying API to do his dirty work. _(There is no actual frontend for you to see. Only the API)_
 
 Rubbing his scheming, microbial hands together, Plankton devised a plan to find information to aid him in his heist... perhapes an identifier for someone important?
 
