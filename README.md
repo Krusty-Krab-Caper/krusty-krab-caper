@@ -87,4 +87,5 @@ The command intercepted and logged all requests made through the Krusty Krab wif
 - The `mitm` tool simulates requests made through the Krusty Krab wifi.
 - Each time you run the `mitm` tool, it will generate a new set of requests, but it will still have any information you need to complete the challenge.
 - Depending on the terminal you run the tool in, the output could be truncated. Either use another terminal or try piping the output to another file with `node mitm.js > log.txt`
+- CTRL F is your friend here!
 - Search through the requests, you may find something useful...
