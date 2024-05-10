@@ -89,3 +89,18 @@ The command intercepted and logged all requests made through the Krusty Krab wif
 - Depending on the terminal you run the tool in, the output could be truncated. Either use another terminal or try piping the output to another file with `node mitm.js > log.txt` (git-bash users may need to use `node.exe mitm.js > log.txt`). If you do this, you can then open the file in a text editor to see the output, but you may need to refresh/close-reopen the file to see new output.
 - CTRL F is your friend here!
 - Search through the requests, you may find something useful...
+
+## Chat
+
+Plankton has found a way to hack into the internal IT chat system. He saved his hacker code in a script called `chat.js` so when he wanted to chat with someone inside the organization, all he had to do was run the following command:
+
+```bash
+node chat.js
+```
+
+Perhaps he could gleen some useful information out of someone in the Krusty Krab IT organization...
+
+#### _Chat Helpful Information_
+
+- If you reset your current chat, the recipient will forget the entire conversation you had. This can be useful if you want to restart a conversation. You can reset the chat by using the `#reset` command, or by stopping and restarting the `chat.js` script.
+- You can't look at other people's chats, you can only start your own chats
