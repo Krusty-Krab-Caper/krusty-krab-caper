@@ -23,7 +23,7 @@ _Remember that every time you restart the server many of the secrets you may hav
 Here are the ground rules of this game:
 
 - No looking at the source code found in the [api-ctf](https://github.com/Krusty-Krab-Caper/api-ctf) repository.
-- No looking at the source code found in the mitm.js tool (It's been obfuscated, but still don't)
+- No looking at the source code found in the mitm.js or chat.js files.
 
 ### Helpful Resources
 
@@ -85,9 +85,9 @@ The command intercepted and logged all requests made through the Krusty Krab wif
 #### _MITM Helpful Information_
 
 - Don't worry, the `mitm` tools doesn't actually perform a Man in the Middle attack. It just simulates requests made through the Krusty Krab wifi.
-- Each time you run the `mitm` tool, you will see a new set of requests, but you will still have any information you need to complete the challenge.
+- Each time you run the `mitm` tool to completion (it will eventually stop), you will see a new set of requests, but you will still have any information you need to complete the challenge.
 - Depending on the terminal you run the tool in, the output could be truncated. Either use another terminal or try piping the output to another file with `node mitm.js > log.txt` (git-bash users may need to use `node.exe mitm.js > log.txt`). If you do this, you can then open the file in a text editor to see the output, but you may need to refresh/close-reopen the file to see new output.
-- CTRL F is your friend here!
+- CTRL-F is your friend here!
 - Search through the requests, you may find something useful...
 
 ## Chat
@@ -103,4 +103,4 @@ Perhaps he could gleen some useful information out of someone in the Krusty Krab
 #### _Chat Helpful Information_
 
 - If you reset your current chat, the recipient will forget the entire conversation you had. This can be useful if you want to restart a conversation. You can reset the chat by using the `#reset` command, or by stopping and restarting the `chat.js` script.
-- You can't look at other people's chats, you can only start your own chats
+- You can't look at other people's chats, you can only start your own chats.
