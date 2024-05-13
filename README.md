@@ -29,6 +29,8 @@ Here are the ground rules of this game:
 
 Here are some resources that may help you in your quest:
 
+- **This README** is your single best resource. We encourage you to at least skim over the entire thing before getting started.
+
 - [Postman](https://www.postman.com/) is a great tool for making API requests. ([BYU tutorial](https://fullstack.byu.edu/#/reference/postman))
 - [Curl](https://curl.se/) is a command-line tool for making HTTP requests.
 - [Node.js](https://nodejs.org/en/) is a JavaScript runtime that can be used to run JavaScript code outside of a browser.
@@ -80,14 +82,15 @@ Plankton decides to use a Man in the Middle (MITM) attack to intercept the reque
 node mitm.js
 ```
 
-The command intercepted and logged all requests made through the Krusty Krab wifi. Most of the requests were uninteresting, but Plankton noticed some very intriguing requests made through the wifi... perhaps they could help him in his quest for the secret formula.
+The command intercepted and logged all requests made through the Krusty Krab network. Most of the requests were uninteresting, but Plankton noticed some very intriguing requests made through the network... perhaps they could help him in his quest for the secret formula.
 
 #### _MITM Helpful Information_
 
-- Don't worry, the `mitm` tools doesn't actually perform a Man in the Middle attack. It just simulates requests made through the Krusty Krab wifi.
+- Don't worry, the `mitm` tools doesn't actually perform a Man in the Middle attack. It just simulates requests made through the Krusty Krab network.
 - Each time you run the `mitm` tool to completion (it will eventually stop), you will see a new set of requests, but you will still have any information you need to complete the challenge.
 - Depending on the terminal you run the tool in, the output could be truncated. Either use another terminal or try piping the output to another file with `node mitm.js > log.txt` (git-bash users may need to use `node.exe mitm.js > log.txt`). If you do this, you can then open the file in a text editor to see the output, but you may need to refresh/close-reopen the file to see new output.
 - CTRL-F is your friend here!
+- Most of the requests visible occur in the _front channel_, usually from a browser through the WiFi. Luckily, Plankton also can see some requests through the _back channel_ which are internal systems communicating through the internal network. Each request is labeled with the channel where it was found. 
 - Search through the requests, you may find something useful...
 
 ## Chat
@@ -104,3 +107,4 @@ Perhaps he could gleen some useful information out of someone in the Krusty Krab
 
 - If you reset your current chat, the recipient will forget the entire conversation you had. This can be useful if you want to restart a conversation. You can reset the chat by using the `#reset` command, or by stopping and restarting the `chat.js` script.
 - You can't look at other people's chats, you can only start your own chats.
+- If it isn't already obvious, these chats are driven by AI, which can tend to hallucinate and give false information. There are specific things you must social engineer out of them, and **it will become very clear what exactly you need to obtain from them.** If you ask it other questions, it either will simply not know or will make things up, so don't trust everything it says unless you know exactly what you're after.
