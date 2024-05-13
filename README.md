@@ -80,14 +80,15 @@ Plankton decides to use a Man in the Middle (MITM) attack to intercept the reque
 node mitm.js
 ```
 
-The command intercepted and logged all requests made through the Krusty Krab wifi. Most of the requests were uninteresting, but Plankton noticed some very intriguing requests made through the wifi... perhaps they could help him in his quest for the secret formula.
+The command intercepted and logged all requests made through the Krusty Krab network. Most of the requests were uninteresting, but Plankton noticed some very intriguing requests made through the network... perhaps they could help him in his quest for the secret formula.
 
 #### _MITM Helpful Information_
 
-- Don't worry, the `mitm` tools doesn't actually perform a Man in the Middle attack. It just simulates requests made through the Krusty Krab wifi.
+- Don't worry, the `mitm` tools doesn't actually perform a Man in the Middle attack. It just simulates requests made through the Krusty Krab network.
 - Each time you run the `mitm` tool to completion (it will eventually stop), you will see a new set of requests, but you will still have any information you need to complete the challenge.
 - Depending on the terminal you run the tool in, the output could be truncated. Either use another terminal or try piping the output to another file with `node mitm.js > log.txt` (git-bash users may need to use `node.exe mitm.js > log.txt`). If you do this, you can then open the file in a text editor to see the output, but you may need to refresh/close-reopen the file to see new output.
 - CTRL-F is your friend here!
+- Most of the requests visible occur in the _front channel_, usually from a browser through the WiFi. Luckily, Plankton also can see some requests through the _back channel_ which are internal systems communicating through the internal network. Each request is labeled with the channel where it was found. 
 - Search through the requests, you may find something useful...
 
 ## Chat
