@@ -29,6 +29,8 @@ Here are the ground rules of this game:
 
 Here are some resources that may help you in your quest:
 
+- **This README** is your single best resource. We encourage you to at least skim over the entire thing before getting started.
+
 - [Postman](https://www.postman.com/) is a great tool for making API requests. ([BYU tutorial](https://fullstack.byu.edu/#/reference/postman))
 - [Curl](https://curl.se/) is a command-line tool for making HTTP requests.
 - [Node.js](https://nodejs.org/en/) is a JavaScript runtime that can be used to run JavaScript code outside of a browser.
