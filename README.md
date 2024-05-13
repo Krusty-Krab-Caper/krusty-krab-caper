@@ -105,3 +105,4 @@ Perhaps he could gleen some useful information out of someone in the Krusty Krab
 
 - If you reset your current chat, the recipient will forget the entire conversation you had. This can be useful if you want to restart a conversation. You can reset the chat by using the `#reset` command, or by stopping and restarting the `chat.js` script.
 - You can't look at other people's chats, you can only start your own chats.
+- If it isn't already obvious, these chats are driven by AI, which can tend to hallucinate and give false information. There are specific things you must social engineer out of them, and **it will become very clear what exactly you need to obtain from them.** If you ask it other questions, it either will simply not know or will make things up, so don't trust everything it says unless you know exactly what you're after.
