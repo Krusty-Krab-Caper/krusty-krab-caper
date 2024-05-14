@@ -14,6 +14,7 @@ Welcome to the Krusty Krab Caper: a Capture the Flag game. You play as Plankton 
 - Node.js >= 20
 - Clone this repository
 - Create a `.env` file and include the following: `OPENAI_API_KEY=yourapikey` _(You must either provide your own OpenAI API Key, or if you are participating in person you will be provided with a key)_
+- Make sure you have port 8080 open and available
 - Spin up the container by running the command `docker compose up --build --detach`
 
 _Remember that every time you restart the server many of the secrets you may have found will be reset._
